@@ -1,0 +1,75 @@
+// Styling for the masthead
+header.masthead {
+  text-align: center;
+  color: white;
+  background-image: url('../img/home-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  opacity:0.9;
+  .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    .intro-lead-in {
+      opacity: 1;
+      font-size: 25px;
+      font-style: italic;
+      line-height: 22px;
+      margin-bottom: 25px;
+      @include header-font;
+    }
+    .intro-heading {
+      opacity: 1;
+      font-size:14px;
+      margin-bottom: 22px;
+      padding:10px;
+      @include header-font;
+      padding-left: 0;
+      letter-spacing: 1px;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  a.btn{
+      border-radius: 0;
+      background-color: #fed136;
+      margin: 9px;
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 1px;
+      border: 1px solid #fed136;
+      @include header-font;
+      text-decoration: none;
+      font-weight: 300;
+      &:hover{
+        background-color: #fff;
+        color: #fed136;
+      }
+   }
+}
+@media(min-width:768px) {
+  header.masthead {
+    .intro-text {
+      padding-top: 300px;
+      padding-bottom: 200px;
+      .intro-lead-in {
+        opacity: 1;
+        font-size: 45px;
+        font-style: italic;
+        line-height: 40px;
+        margin-bottom: 25px;
+        @include header-font;
+         position: relative;
+      }
+      .intro-heading {
+        opacity: 1;
+        font-size: 14px;
+        padding: 8px;
+        letter-spacing: 1px;
+        margin-bottom: 25px;
+        @include header-font;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}

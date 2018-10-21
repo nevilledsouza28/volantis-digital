@@ -10,6 +10,8 @@
     border: 0;
     background-color: $primary;
     @include heading-font;
+    border-radius: 0px;
+    transition: unset !important;
   }
   .navbar-brand {
     color: $primary;
@@ -26,9 +28,8 @@
       .nav-link {
         font-size: 65%;
         font-weight: 500;
-        padding: 0.75em 0;
         letter-spacing: 3px;
-        background-color: #484848;
+        background-color: #404040;
         margin: 0px 1px;
         color: $primary;
         @include heading-font;
@@ -42,7 +43,7 @@
 }
 @media(min-width:992px) {
   #mainNav {
-    padding: 10px;
+    padding: 0px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -57,7 +58,7 @@
     .navbar-nav {
       .nav-item {
         .nav-link {
-          padding: 1.1em 1em !important;
+          padding: 10px;
         }
       }
     }

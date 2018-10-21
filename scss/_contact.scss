@@ -34,8 +34,7 @@ section#contact {
         letter-spacing: 1px;
         border: 1px solid #fed136;
         @include header-font;
-        text-decoration: none;
-        transition: unset;
+        transition: unset !important;
         &:hover{
           background-color: #fff;
           color: #fed136;

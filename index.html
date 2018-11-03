@@ -10,7 +10,6 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
@@ -20,8 +19,8 @@
     document.onreadystatechange = function () {
       if (document.readyState == 'complete') {
           setTimeout(function(){
-             document.getElementById('pre-loader').style.visibility="hidden";
-             document.getElementById('post-loader').style.visibility="visible";
+             document.getElementById('pre-loader').style.display="none";
+             document.getElementById('post-loader').style.display="block";
           },2500);
       }
     }
@@ -755,6 +754,7 @@
     </div>
     <!-- pre-loader -->
     <div id="pre-loader">
+      <img src="img/VD_Final.png" alt="Volantis Digital"/><span>olantis Digital</span>
       <div class="loading-bar"></div>
       <div class="loading-bar"></div>
       <div class="loading-bar"></div>

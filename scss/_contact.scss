@@ -27,17 +27,17 @@ section#contact {
   }
   .btn{
         border-radius: 0;
-        background-color: #fed136;
+        background-color: #bbe2f3;
         margin: 9px;
         text-transform: uppercase;
         color: #fff;
         letter-spacing: 1px;
-        border: 1px solid #fed136;
+        border: 1px solid #bbe2f3;
         @include header-font;
         transition: unset !important;
         &:hover{
           background-color: #fff;
-          color: #fed136;
+          color: #bbe2f3;
         }
   }
   .form-control:focus {

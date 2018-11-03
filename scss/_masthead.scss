@@ -13,12 +13,13 @@ header.masthead {
     padding-bottom: 100px;
     .intro-lead-in {
       opacity: 1;
-      font-size: 25px;
+      font-size: 20px;
       font-style: italic;
-      line-height: 22px;
-      margin-bottom: 25px;
+      line-height: 21px;
+      margin-bottom: 22px;
       @include heading-font;
       overflow: hidden; /* Ensures the content is not revealed until the animation */
+      white-space: nowrap; /* Keeps the content on a single line */
       letter-spacing: .15em; /* Adjust as needed */
       animation: typing 4.5s steps(50, end);
     }
@@ -41,18 +42,18 @@ header.masthead {
   }
   a.btn{
       border-radius: 0;
-      background-color: #fed136;
+      background-color: #90d7f3;
       margin: 9px;
       text-transform: uppercase;
       color: #fff;
       letter-spacing: 1px;
-      border: 1px solid #fed136;
+      border: 1px solid #90d7f3;
       @include header-font;
       transition: unset !important;
       font-weight: 300;
       &:hover{
         background-color: #fff;
-        color: #fed136;
+        color: #90d7f3;
       }
    }
 }

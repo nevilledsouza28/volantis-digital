@@ -29,33 +29,44 @@ h6 {
 }
 
 #post-loader{
-  visibility: hidden;
+  display: none;
 }
 
 #pre-loader{
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  img{
+    width:45px;
+    height:45px;
+    display: inline-block;
+  }
+  span{
+    color: #0094d3;
+    margin: 0px 2px;
+  }
   .loading-bar {
     display: inline-block;
     width: 5px;
     height: 20px;
     border-radius: 4px;
     animation: loading 1s ease-in-out infinite;
-    &:nth-child(1) {
-      background-color: #3498db;
+    &:nth-child(3) {
+      background-color: #68c8ec;
       animation-delay: 0;
     }
-    &:nth-child(2) {
-      background-color: #c0392b;
+    &:nth-child(4) {
+      background-color: #0094d3;
       animation-delay: 0.09s;
     }
-    &:nth-child(3) {
-      background-color: #f1c40f;
+    &:nth-child(5) {
+      background-color: #006caf;
       animation-delay: .18s;
     }
-    &:nth-child(4) {
-      background-color: #27ae60;
+    &:nth-child(6) {
+      background-color: #094f96;
       animation-delay: .27s;
     }
   }

@@ -18,7 +18,16 @@ header.masthead {
       line-height: 22px;
       margin-bottom: 25px;
       @include heading-font;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      letter-spacing: .15em; /* Adjust as needed */
+      animation: typing 4.5s steps(50, end);
     }
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
     .intro-heading {
       opacity: 1;
       font-size:14px;

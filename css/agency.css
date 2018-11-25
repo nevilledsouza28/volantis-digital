@@ -258,7 +258,7 @@ img::-moz-selection {
     transition: all 0.3s;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
-    padding: 10px;
+    padding: 15px;
   }
   #mainNav.navbar-shrink {
     padding-top: 0;
@@ -475,12 +475,13 @@ header.masthead a.btn:hover {
 }
 
 .solutions-modal .modal-content h2 {
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 15px;
 }
 
 .solutions-modal .modal-content p {
   margin-bottom: 30px;
+  font-size: 13px;
 }
 
 .solutions-modal .modal-content p.item-intro {
@@ -505,10 +506,10 @@ header.masthead a.btn:hover {
 
 .solutions-modal .close-modal {
   position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 75px;
-  height: 75px;
+  top: 60px;
+  right: 40px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   background-color: transparent;
 }

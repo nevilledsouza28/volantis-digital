@@ -39,18 +39,19 @@ h6 {
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
   img{
-    width:45px;
-    height:45px;
+    width:25px;
+    height:25px;
     display: inline-block;
   }
   span{
     color: #0094d3;
     margin: 0px 2px;
+    font-size: 12px;
   }
   .loading-bar {
     display: inline-block;
-    width: 5px;
-    height: 20px;
+    width: 2px;
+    height: 15px;
     border-radius: 4px;
     animation: loading 1s ease-in-out infinite;
     &:nth-child(3) {
@@ -102,6 +103,19 @@ section {
   }
 }
 @media(min-width:768px) {
+  #pre-loader{
+    img{
+        width:45px;
+        height:45px;
+    }
+    span{
+        font-size: 20px;
+    }
+    .loading-bar {
+        width: 5px;
+        height: 20px;
+    }
+  }
   section {
     padding: 70px 0;
   }

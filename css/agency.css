@@ -44,20 +44,21 @@ h6 {
 }
 
 #pre-loader img {
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
   display: inline-block;
 }
 
 #pre-loader span {
   color: #0094d3;
   margin: 0px 2px;
+  font-size: 12px;
 }
 
 #pre-loader .loading-bar {
   display: inline-block;
-  width: 5px;
-  height: 20px;
+  width: 2px;
+  height: 15px;
   border-radius: 4px;
   -webkit-animation: loading 1s ease-in-out infinite;
   animation: loading 1s ease-in-out infinite;
@@ -138,6 +139,17 @@ section h3.section-subheading {
 }
 
 @media (min-width: 768px) {
+  #pre-loader img {
+    width: 45px;
+    height: 45px;
+  }
+  #pre-loader span {
+    font-size: 20px;
+  }
+  #pre-loader .loading-bar {
+    width: 5px;
+    height: 20px;
+  }
   section {
     padding: 70px 0;
   }
@@ -506,7 +518,7 @@ header.masthead a.btn:hover {
 
 .solutions-modal .close-modal {
   position: absolute;
-  top: 60px;
+  top: 10px;
   right: 40px;
   width: 30px;
   height: 30px;
